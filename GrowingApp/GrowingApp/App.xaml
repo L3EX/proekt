@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowingApp.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="TextColor">#8F8297</Color>
+            <Color x:Key="Primary">#2D304A</Color>
+            <Color x:Key="CGood">#2A4A4A</Color>
+            <Color x:Key="CSecondary">#F3C8EB</Color>
+            <Color x:Key="CWarning">#4A2438</Color>
+            <Color x:Key="CInfo">#4A391E</Color>
+            <Color x:Key="DarkBack">#010412</Color>
+
+
+
+            <Style TargetType="Label" x:Key="LInfo">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CInfo}"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LWarning">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="25"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LPrimary">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LGood">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CGood}"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style TargetType="Label" x:Key="Delayed">
+                <Setter Property="TextColor" Value="#232323"/>
+                <Setter Property="BackgroundColor" Value="#cccccc"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style TargetType="Label" x:Key="Completed">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CGood}"/>
+                <Setter Property="FontSize" Value="19"/>
+                <Setter Property="TextDecorations" Value="Strikethrough"/>
+            </Style>
+            <Style TargetType="Label" x:Key="Failed">
+                <Setter Property="TextColor" Value="#232323"/>
+                <Setter Property="BackgroundColor" Value="#cccccc"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style TargetType="Label" x:Key="ToDo">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="#cccccc"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="BInfo">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CInfo}"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Button" x:Key="BWarning">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CWarning}"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Button" x:Key="BPrimary">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Button" x:Key="BGood">
+                <Setter Property="TextColor" Value="{StaticResource TextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource CGood}"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

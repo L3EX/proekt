@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrowingApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:GrowingApp.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource DarkBack}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkBack">#010412</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1" BackgroundColor="{StaticResource DarkBack}">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="{Binding Counter.Counter}" Style="{StaticResource LWarning}"/>
+                <Button Margin="0,10,0,0" Text="+1"
+                        Command="{Binding Plus}"
+                        Style="{StaticResource BPrimary}"/>
+                <Button Margin="0,10,0,0" Text="+1000"
+                        Command="{Binding ZXC}"
+                        Style="{StaticResource BInfo}"/>
+                <Button Margin="0,10,0,0" Text="-7"
+                        Command="{Binding Minus}"
+                        Style="{StaticResource BWarning}"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GrowingApp.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource DarkBack}">
+    <ContentPage.Content>
+        <Button x:Name="button" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Login" Command="{Binding LoginCommand}"
+                    BorderWidth="5" CornerRadius="90" HeightRequest="200" WidthRequest="200"
+                    CommandParameter="{x:Reference button}"
+                FontSize="30" TextColor="{StaticResource DarkBack}">
+
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="LightSkyBlue"
+                                      Offset="0.1" />
+                    <GradientStop Color="DeepSkyBlue" Offset="1.0"/>
+                    <GradientStop Color="SkyBlue"
+                                      Offset="0.5" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+    </ContentPage.Content>
+</ContentPage>
